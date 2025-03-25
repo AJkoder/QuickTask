@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask - Post a Task</title>
+    <link rel="stylesheet" href="e.css">
+</head>
+<body>
+    <header>
+        <div class="logo">QuickTask</div>
+        <nav>
+            <ul>
+                <li><a href="#">My Tasks</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="task-form">
+            <h2>Post a New Task</h2>
+            <form id="taskForm">
+                <label for="category">Select Category:</label>
+                <select id="category">
+                    <option value="">--Select Category--</option>
+                    <option>House Cleaning</option>
+                    <option>Plumbing</option>
+                    <option>Electrician</option>
+                    <option>Furniture Assembly</option>
+                    <option>Home Painting</option>
+                    <option>Carpentry</option>
+                    <option>AC Repair</option>
+                </select>
+                
+                <label for="description">Task Description:</label>
+                <textarea id="description" rows="4" placeholder="Describe your task..."></textarea>
+                
+                <label for="budget">Budget Range (₹):</label>
+                <input type="number" id="budget" placeholder="Enter your budget (INR)">
+                
+                <label for="duration">Task Duration (hours):</label>
+                <input type="number" id="duration" placeholder="Expected duration">
+                
+                <label for="location">Location (City/Area):</label>
+                <input type="text" id="location" placeholder="Eg: Mumbai, Andheri East">
+                
+                <button type="submit">Post Task</button>
+                <p class="success-message" id="successMessage">Task posted successfully! ✅</p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+.box{
+    margin-top: 15px;
+    height: 400px;
+    width: 23%;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   background-color: #e2e7e6;
+    
+}
+.box-img{
+    height: 300px;
+ background-size: cover;
+ background-repeat: no-repeat;
+   
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: #007185;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 50px;
+    background: #e0f7fa;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 60px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero h2 {
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #00796b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #004d40;
+}
+
+.task-categories {
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.task-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.task-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.task-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+    text-align: center;
+    padding: 80px 30px;
+    background: #f1f8e9;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.contact {
+    text-align: center;
+    padding: 80px 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons .cta-button {
+    
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+.auth-buttons .cta-button:hover {
+    background: #004d40;
+}
+
+.auth-buttons .register:hover {
+    background: #004d40;
+}
+
+footer {
+    background-color: #232f3e;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    padding: 15px;
+    text-align: center;
+}
+
+.foot-panel1 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.foot-panel1 a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel2 {
+    display: flex;
+    display: inline block;
+    justify-content: space-around;
+    padding: 40px 10%;
+    background-color: #232f3e;
+    text-align: left;
+}
+
+.footer-column {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel4 {
+    background-color: #131a22;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pages a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+/* Smooth fade-in with slide */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.task-item {
+    animation: fadeSlideIn 0.8s ease-in-out;
+}
+.task-item:hover {
+    transform: scale(1.08) rotateZ(3deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease;
+}
+.cta-button {
+    background: linear-gradient(90deg, #00796b, #004d40);
+    transition: background-size 0.4s ease-in-out;
+}
+
+.cta-button:hover {
+    background-size: 200% 100%;
+    background-position: right center;
+}
+.task-item {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.task-item:hover {
+    backdrop-filter: blur(15px);
+}
+.cta-button:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes wrapIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes wrapOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.animated-element {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.wrap-in {
+    animation-name: wrapIn;
+}
+
+.wrap-out {
+    animation-name: wrapOut;
+}

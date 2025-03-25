@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Tasks</title>
+    <link rel="stylesheet" href="hu.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Find & Apply for Tasks Instantly</h1>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters">
+        <input type="text" id="search-bar" placeholder="Search tasks...">
+        
+        <label for="category">Category:</label>
+        <select id="category">
+            <option>All</option>
+            <option>Cleaning</option>
+            <option>Delivery</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>Moving Help</option>
+            <option>Painting</option>
+            <option>Pet Care</option>
+            <option>Appliance Repair</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <select id="location">
+            <option>Within 5 km</option>
+            <option>Within 10 km</option>
+            <option>Within 20 km</option>
+            <option>Any</option>
+        </select>
+
+        <label for="pay-range">Pay Range:</label>
+        <input type="number" id="min-pay" placeholder="Min ($)">
+        <input type="number" id="max-pay" placeholder="Max ($)">
+
+        <button id="filter-btn">Apply Filters</button>
+    </section>
+
+    <!-- Task Listings -->
+    <section class="task-list">
+        <h2>Available Tasks</h2>
+        <div class="tasks-container">
+
+            <div class="task">
+                <img src="plumbing-professional-doing-his-job_23-2150721538.avif" alt="Plumbing Task">
+                <h3>Fix a Leaky Faucet</h3>
+                <p><strong>Category:</strong> Plumbing</p>
+                <p><strong>Pay:</strong> $50</p>
+                <p><strong>Location:</strong> Downtown</p>
+                <p><strong>Expires by:</strong> 5 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="delivery.jpeg" alt="Delivery Task">
+                <h3>Deliver a Package</h3>
+                <p><strong>Category:</strong> Delivery</p>
+                <p><strong>Pay:</strong> $30</p>
+                <p><strong>Location:</strong> Midtown</p>
+                <p><strong>Expires by:</strong> 2 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="th (8).jpeg" alt="Furniture Assembly Task">
+                <h3>Assemble Furniture</h3>
+                <p><strong>Category:</strong> Moving Help</p>
+                <p><strong>Pay:</strong> $70</p>
+                <p><strong>Location:</strong> Uptown</p>
+                <p><strong>Expires by:</strong> 3 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="th.jpeg" alt="Cleaning Task">
+                <h3>House Cleaning</h3>
+                <p><strong>Category:</strong> Cleaning</p>
+                <p><strong>Pay:</strong> $40</p>
+                <p><strong>Location:</strong> Suburbs</p>
+                <p><strong>Expires by:</strong> 4 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="th (1).jpeg" alt="Lawn Mowing Task">
+                <h3>Lawn Mowing</h3>
+                <p><strong>Category:</strong> Yard Work</p>
+                <p><strong>Pay:</strong> $35</p>
+                <p><strong>Location:</strong> West Side</p>
+                <p><strong>Expires by:</strong> 6 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="th (2).jpeg" alt="AC Repair Task">
+                <h3>AC Repair</h3>
+                <p><strong>Category:</strong> Appliance Repair</p>
+                <p><strong>Pay:</strong> $100</p>
+                <p><strong>Location:</strong> Central City</p>
+                <p><strong>Expires by:</strong> 2 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="l-intro-1661020343.jpg" alt="Grocery Shopping Task">
+                <h3>Grocery Shopping</h3>
+                <p><strong>Category:</strong> Errands</p>
+                <p><strong>Pay:</strong> $25</p>
+                <p><strong>Location:</strong> Downtown</p>
+                <p><strong>Expires by:</strong> 1 day</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="1000_F_451029352_y0IHC45pY1NLUXaTuysmjMcsDeqj5kT8.jpg" alt="Home Painting Task">
+                <h3>Home Painting</h3>
+                <p><strong>Category:</strong> Painting</p>
+                <p><strong>Pay:</strong> $150</p>
+                <p><strong>Location:</strong> East Side</p>
+                <p><strong>Expires by:</strong> 7 days</p>
+                <button>Apply</button>
+            </div>
+
+            <div class="task">
+                <img src="th (3).jpeg" alt="Pet Sitting Task">
+                <h3>Pet Sitting</h3>
+                <p><strong>Category:</strong> Pet Care</p>
+                <p><strong>Pay:</strong> $45</p>
+                <p><strong>Location:</strong> Uptown</p>
+                <p><strong>Expires by:</strong> 3 days</p>
+                <button>Apply</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We connect skilled taskers with people needing services. Join now!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Post a Task</a></li>
+                    <li><a href="#">Browse Tasks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="th (4).jpeg" alt="Facebook"></a>
+                    <a href="#"><img src="th (5).jpeg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 QuickTask. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
