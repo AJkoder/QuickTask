@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask Chat</title>
+    <link rel="stylesheet" href="../css/chat.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="chat-user">
+               
+                <span class="chat-username">John Doe</span>
+            </div>
+            <div class="chat-options">
+                <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+                <button class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div class="chat-box" id="chat-box">
+            <div class="message received">
+                <p>Hello! How can I assist you today? 😊</p>
+                <span class="time">10:30 AM</span>
+            </div>
+        </div>
+
+    
+
+        <!-- Chat Input -->
+        <div class="chat-input">
+            <input type="file" id="file-upload" hidden>
+            <button id="attach-btn"><i class="fas fa-paperclip"></i></button>
+            <input type="text" id="chat-message" placeholder="Type a message...">
+            <button id="emoji-btn"><i class="far fa-smile"></i></button>
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            <button id="voice-btn"><i class="fas fa-microphone"></i></button>
+        </div>
+    </div>
+
+    <script src="../js/chat.js"></script>
+</body>
+</html>

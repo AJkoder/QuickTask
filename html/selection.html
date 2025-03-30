@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Selection - QuickTask</title>
+    <link rel="stylesheet" href="../css/selection.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">QuickTask</div>
+        <div class="helpdesk">Helpdesk</div>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to QuickTask</h1>
+        <h4>Select your role to continue:</h4>
+        <div class="role-buttons">
+            <button class="tasker-btn" onclick="redirectToTasker()">Tasker</button>
+            <button class="employer-btn" onclick="redirectToEmployer()">Employer</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToTasker() {
+            window.location.href = "tasker-page.html";
+        }
+
+        function redirectToEmployer() {
+            window.location.href = "employer-page.html";
+        }
+    </script>
+<script src="../js/selection.js"></script>
+</body>
+</html>

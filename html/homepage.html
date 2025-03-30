@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTask - Your One-Stop Task Solution</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">QuickTask</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="http://127.0.0.1:5500/QT/html/login.html" class="cta-button"><span id="sign-in">Sign In</a></span>
+                <a href="http://127.0.0.1:5500/QT/html/register.html" class="cta-button register">Register</a>
+                <a href="http://127.0.0.1:5500/QT/html/profile.html" class="cta-button profile"><i class="fa-solid fa-square-user"></i></a>
+            </div>
+        </div>
+
+        
+    </header>
+    
+    <section class="hero">
+        <h2>Find Trusted Professionals for Your Everyday Needs</h2>
+        <p>Hire skilled Taskers for home repairs, cleaning, delivery, beauty services, and more.</p>
+        <a href="#services" class="cta-button">Explore Services</a>
+    </section>
+    
+    <section id="services" class="task-categories">
+        <h2>Our Popular Services</h2>
+        <div class="shop-section">
+    
+            <div class="services-container">
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img1.jpeg');"></div>
+                    <p>Home & Apartment Cleaning</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img2.jpg');"></div>
+                    <p>Babysitting</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img3.jpg');"></div>
+                    <p>Music and Art Lessons</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/image5.jpeg');"></div>
+                    <p>Painting & Waterproofing</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img5.jpeg');"></div>
+                    <p>Home Repairs</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img6.jpeg');"></div>
+                    <p>Tutoring & Assignments</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img4.jpeg');"></div>
+                    <p>Salon & Spa</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/img7.jpeg');"></div>
+                    <p>Packers & Movers</p>
+                </div>
+                <div class="box">
+                    <div class="box-img" style="background-image: url('../img/image9.jpeg');"></div>
+                    <p>Others</p>
+                </div>
+              
+            </div>
+            
+        </div> <!-- End of .shop-section -->
+     
+        
+    </section>
+    
+    
+     <section id="testimonials" class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-list">
+           
+            <div class="testimonial">"QuickTask made my home cleaning chores so easy! Highly recommended." - Supriya</div>
+            <div class="testimonial">"Great service! The electrician arrived on time and fixed everything quicker than expected." - Jagriti</div>
+            <div class="testimonial">"I love the salon services. Super professional and hassle-free at such mouth-watering prices!" - Lovlesh</div>
+        </div>
+    </section>
+   
+    
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Have any queries? Need assistance? Contact us anytime.</p>
+        <a href="mailto:support@quicktask.com" class="cta-button">Email Us</a>
+    </section> 
+    <!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/homepage.js"></script> 
+    <script src="../js/firebase.js"></script> 
+
+</body>
+
+<footer>
+    <div class="foot-panel1">
+        <a href="#" class="back-to-top">Back to Top</a>
+    </div>
+
+    <div class="foot-panel2">
+        <div class="footer-column">
+            <p>Get to Know Us</p>
+            <a href="#">About QuickTask</a>
+            <a href="#">Careers</a>
+            <a href="#">Press Releases</a>
+            <a href="#">Investor Relations</a>
+        </div>
+
+        <div class="footer-column">
+            <p>For Employers</p>
+            <a href="#">Post a Task</a>
+            <a href="#">Find Taskers</a>
+            <a href="#">Pricing & Plans</a>
+            <a href="#">Help Center</a>
+        </div>
+
+        <div class="footer-column">
+            <p>For Taskers</p>
+            <a href="#">Become a Tasker</a>
+            <a href="#">Browse Jobs</a>
+            <a href="#">Earnings & Payments</a>
+            <a href="#">Support</a>
+        </div>
+
+        <div class="footer-column">
+            <p>Connect with Us</p>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQ</a>
+        </div>
+        <p class="copyright">&copy; 2025 QuickTask. All rights reserved.</p>
+    </div>
+   
+
+</footer>
+
+</html>
