@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Page - QuickTask</title>
+    <link rel="stylesheet" href="../css/employer.css"> <!-- Link CSS properly -->
+</head>
+<body>
+
+    <header>
+        <div class="logo">QuickTask</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Tasks</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="taskForm" class="task-form">
+            <h2>Post a Task</h2>
+
+            <label for="category">Task Category:</label>
+            <input type="text" id="category" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="budget">Budget (₹):</label>
+            <input type="number" id="budget" required>
+
+            <label for="duration">Duration (days):</label>
+            <input type="number" id="duration" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <button type="submit">Post Task</button>
+
+            <div id="successMessage" class="success-message">Task posted successfully!</div>
+        </form>
+    </main>
+
+    <script src="../js/employer.js"></script> <!-- Link JS properly -->
+</body>
+</html>

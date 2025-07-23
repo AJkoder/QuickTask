@@ -1,0 +1,103 @@
+/* Background Image */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1920x1080/?technology,chat') no-repeat center center/cover;
+    background-color: white;
+   
+}
+
+/* Chat Container */
+.chat-container {
+    width: 400px;
+    height: 550px;
+    background: rgba(20, 205, 183, 0.1); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Blurred effect */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: solid 3px rgb(24, 184, 168);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode .chat-header {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .chat-box {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Chat Header */
+.chat-header {
+    background: rgb(15, 171, 148);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chat Box */
+.chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Chat Messages */
+.message {
+    max-width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.received {
+    background: rgba(255, 255, 255, 0.8);
+    align-self: flex-start;
+}
+
+.sent {
+    background: rgba(52, 152, 219, 0.9);
+    color: white;
+    align-self: flex-end;
+}
+
+.time {
+    font-size: 10px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.chat-input button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}

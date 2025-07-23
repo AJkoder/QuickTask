@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    margin: 0;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0c9d9d;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .helpdesk {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar .helpdesk:hover {
+    color: #ffcc00;
+}
+
+.container {
+ 
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5); /* Start small */
+    opacity: 0;
+    animation: scaleUp 1s ease-out forwards;
+    border: solid 3px black;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #333;
+}
+
+h4 {
+    color: #555;
+    font-size: 22px;
+}
+
+.role-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s ease, opacity 0.3s;
+}
+
+.tasker-btn {
+    background-color: #27a4ad;
+    color: white;
+}
+
+.employer-btn {
+    background-color: #27a4ad;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    background-color: #17b494;
+}
+@keyframes scaleUp {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+
+
