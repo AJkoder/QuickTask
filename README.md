@@ -8,26 +8,26 @@ It’s built to make daily tasks faster, easier, and local.
 
 🚀 Features
 
-Login & registration
-Role selection: Tasker or Employer
-Post and accept tasks
-Profile dashboard
-Basic task management
-Mobile-responsive UI
+• Login & registration
+• Role selection: Tasker or Employer
+• Post and accept tasks
+• Profile dashboard
+• Basic task management
+• Mobile-responsive UI
 
 🔧 Tech Used
 
-HTML, CSS, JavaScript
-GitHub (for code)
-Netlify (for hosting)
+• HTML, CSS, JavaScript
+• GitHub (for code)
+• Netlify (for hosting)
 
 🧪 Run Locally
 
-bash
-Copy
-Edit
-git clone https://github.com/AJkoder/QuickTask.git
-cd QuickTask
+• bash
+• Copy
+• Edit
+• git clone https://github.com/AJkoder/QuickTask.git
+• cd QuickTask
 # Open index.html in your browser
 
 Project is still in progress. New features coming soon! 💡
