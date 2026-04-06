@@ -1,33 +1,67 @@
-QuickTask – Connect & Get Things Done
+# QuickTask
 
-🌐 Live Demo: quicktask-connect.netlify.app
+**Connect with local people for everyday tasks.**
 
-QuickTask is a web platform that connects people who need help with small local tasks and those willing to do them.
-For example, someone can offer to teach guitar on weekends, and others can book them directly.
-It’s built to make daily tasks faster, easier, and local.
+QuickTask is a hyperlocal task marketplace where people post small jobs — tutoring, home repairs, music lessons, cleaning — and local taskers pick them up. No global freelancers, no complexity. Just people helping people nearby.
 
-🚀 Features
+🌐 [quicktask-connect.netlify.app](https://quicktask-connect.netlify.app)
 
-• Login & registration
-• Role selection: Tasker or Employer
-• Post and accept tasks
-• Profile dashboard
-• Basic task management
-• Mobile-responsive UI
+---
 
-🔧 Tech Used
+## Features
 
-• HTML, CSS, JavaScript
-• GitHub (for code)
-• Netlify (for hosting)
+- User registration and login with role selection (Tasker / Employer)
+- Browse tasks by category
+- Post and manage tasks
+- Profile dashboard
+- Mobile-responsive UI
 
-🧪 Run Locally
+> The frontend is complete. Full-stack backend (API, database, bookings, notifications) is currently in development.
 
-• bash
-• Copy
-• Edit
-• git clone https://github.com/AJkoder/QuickTask.git
-• cd QuickTask
-# Open index.html in your browser
+---
 
-Project is still in progress. New features coming soon! 💡
+## Tech Stack
+
+| Layer | Current | Planned |
+|---|---|---|
+| Frontend | HTML, CSS, JavaScript | — |
+| Backend | — | Node.js + Express |
+| Database | — | PostgreSQL (Supabase) |
+| Auth | — | JWT + bcrypt |
+| Hosting | Netlify | Netlify + Render |
+
+---
+
+## Getting Started
+
+```bash
+git clone https://github.com/AJkoder/QuickTask.git
+cd QuickTask
+open index.html
+```
+
+No build step required. Open `index.html` directly in your browser.
+
+---
+
+## Roadmap
+
+- [x] Frontend UI with all core pages
+- [x] Role-based registration flow
+- [ ] REST API and database integration
+- [ ] Task posting and booking flow
+- [ ] Email notifications
+- [ ] Reviews and ratings
+- [ ] Payment integration (Razorpay)
+
+---
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## License
+
+[MIT](LICENSE)
